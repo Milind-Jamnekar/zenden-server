@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --require dotenv/config server.js",
-    "build": "node --require dotenv/config server.js"
+    "dev": "nodemon --require dotenv/config server.js",
+    "start": "node --require dotenv/config server.js"
   },
   "keywords": [],
   "author": "",
