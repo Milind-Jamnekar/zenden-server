@@ -1,8 +1,8 @@
-const config = {
-  db: "mongodb://localhost:27017/tasks",
-  port: 3001,
-  secret: "secret word for JWT",
-};
+// config.js
 
-// mongodb://localhost:27017/
-module.exports = config;
+require("dotenv").config({ path: __dirname + ".env" });
+module.exports = {
+  db: process.env.DB,
+  port: process.env.PORT,
+  secret: process.env.SECRET,
+};

@@ -24,14 +24,12 @@ npm install
 Configure the server:
 
 ```
-touch config.js
+touch .env
 
 # configuration should look like this:
-module.exports = {
-  db: 'mongodb://localhost/your-db-name-here',
-  port: 3001,
-  secret: 'secret word for JWT'
-};
+SECRET:"secret word for JWT"
+PORT:3000
+DB:"mongodb://localhost:27017/tasks"
 ```
 
 In case you dont have MongoDB installed locally, you can use docker image.
