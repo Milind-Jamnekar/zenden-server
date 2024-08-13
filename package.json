@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --require dotenv/config server.js",
-    "start": "node --require dotenv/config server.js"
+    "start": "node --require dotenv/config server.js",
+    "build": "echo hello",
+    "vercel-build": "echo hello"
   },
   "keywords": [],
   "author": "",
